@@ -26,10 +26,13 @@ for(let i =0;i<student.length;i++){
 }
 
 //delet student details whose dept is cse or ece
+// consider deletion anamoly
 
-for(let i = 0; i<student.length;i++){
+for(let i = 0; i<student.length; ){
     if(student[i].dept=="cse"||student[i].dept=="ece"){
         student.splice(i,1)
     }
-}
+  else{
+    i++
+   }
 console.log(student)
