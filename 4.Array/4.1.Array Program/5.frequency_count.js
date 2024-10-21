@@ -4,7 +4,7 @@ let b = [... new Set(a)]                  // "S" is capital in "Set". Note that 
 let count = 0
 
 for(let i =0 ; i<b.length;i++){
-    count = 0
+    count = 0                            //reintialise count to zero
     for(let j = 0 ; j<a.length ; j++){
         if(b[i] == a[j]){               //its b of i and a of j ,and not a of i and a of j
             count = count +1
@@ -23,7 +23,7 @@ let x = 0
 let max_freq_ele = b[0]
 
 for(let i =0 ; i<b.length;i++){
-    count = 0
+    count = 0                              // reintialize count to zero
     for(let j = 0 ; j<a.length ; j++){
         if(b[i] == a[j]){                    //its b of i and a of j ,and not a of i and a of j
             count = count +1
