@@ -1,4 +1,4 @@
-//pg59
+//pg59...ASCII concept
 //calculate weight of give string
 //abcd = a+b+c+d = 1+2+3+4= 10
 //bc = b+c  = 2+3 = 5
