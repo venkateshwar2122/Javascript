@@ -1,4 +1,8 @@
+//pg61
 //reverse every word in a given string in place
+
+//sir method
+
 
 
 //my method
