@@ -1,10 +1,11 @@
 //find 2nd largest element in the array
 
 let a =[100,200,300,400,500]
-let max1 = max2 = a[0]
 
 //if array contain only one element
 //then take max1 = a[i] and max2= -1
+
+let max1 = max2 = a[0]
 
 for(let i=0; i<a.length; i++){
     
