@@ -9,3 +9,8 @@ let r = a.map((e)=> {
     } )
 
 console.log(r)
+
+/* output
+[ 'Hello', 'Good', 'Five', 'Welcome' ]
+
+*/
