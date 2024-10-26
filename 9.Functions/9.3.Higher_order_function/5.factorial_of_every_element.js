@@ -15,6 +15,8 @@ console.log(r)
 5
 6
 [undefined, undefined, undefined, undefined, undefined ]
+
+// undefined is coming because we have written return statement 
 */
 
 // program to calculate factorial of every elemnt in array
