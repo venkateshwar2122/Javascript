@@ -88,11 +88,11 @@ undefined                    // VALUE OF r1 AT LAST, since r1 contains last retu
 */
 
 
+
+
 /* with "return acc"
 
 let a = [10,20,30,40,50]
-
-
 let r1 = a.reduce((acc,e,index,arr)=>{
         
         console.log(acc)
@@ -106,7 +106,7 @@ output:
 10       //acc2...... since we are return same acc value without manipulating it......acc's 2nd iteration
 10       //acc3......same as above
 10       //acc4........same as above
-10        // THIS is "r1" VALUE......since r1 value holds the accumulator last retuned value
+10        // THIS is "r1" VALUE......since r1 value holds the accumulator last returned value
 
 */
 
@@ -136,3 +136,29 @@ output:
 
 //note that always use "return" with "acc" only,if not then there is no use of using reduce()
 //acc is like a container which holds value according to certain condition after each iteration
+
+
+/* EXCEPTION: if u initialise the accumulator value with any value , then "ele" and "index" by default WILL NOT START from
+2nd element,it will start from first element itself
+ex
+let a = [10,20,30,40,50]
+let r = a.reduce((acc,ele,index)=>{
+        console.log(ele)
+        console.log(index)
+        },128)              //initialised acc value to "128"(any random value)
+        
+console.log(r)
+
+output:
+10        // ele1 is the first element instead of second element
+0         //index1 is the index of first element instead of second element
+20        //ele2
+1         //index2
+30
+2
+40
+3
+50
+4
+128    // r value which is equal to "return acc"
+*/
