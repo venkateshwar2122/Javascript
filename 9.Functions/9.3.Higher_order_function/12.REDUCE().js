@@ -83,7 +83,7 @@ undefined                    //acc4 accumulator value at last iteration
 50
 4
 [ 10, 20, 30, 40, 50 ]
-undefined                    // VALUE OF r1 AT LAST, since r1 contains accumulator value at last iterartion
+undefined                    // VALUE OF r1 AT LAST, since r1 contains last returned value of accumulator 
 
 */
 
