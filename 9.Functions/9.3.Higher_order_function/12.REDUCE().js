@@ -135,4 +135,4 @@ output:
 
 
 //note that always use "return" with "acc" only,if not then there is no use of using reduce()
-//acc is like a container which holds value according to certain consitionn after each iteration
+//acc is like a container which holds value according to certain condition after each iteration
