@@ -132,3 +132,7 @@ output:
 14       // "r1" value..r1 value holds the last returned value of acc . Note that "console.log(acc)" is above "return acc+1"
 
 */
+
+
+//note that always use "return" with "acc" only,if not then there is no use of using reduce()
+//acc is like a container which holds value according to certain consitionn after each iteration
