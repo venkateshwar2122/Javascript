@@ -1,3 +1,9 @@
+/* recursive function
+    1) a , b=0
+    2) f(b,a%b) , b!=0
+
+    */
+
 function gcd(a,b){
     if(b==0){
         return a
