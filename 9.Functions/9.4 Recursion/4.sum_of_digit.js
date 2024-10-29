@@ -15,3 +15,5 @@ function fun(n){
 }
 
 console.log(fun(123))
+
+//output:6
