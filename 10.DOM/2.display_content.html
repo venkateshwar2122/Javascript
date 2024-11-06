@@ -1,0 +1,59 @@
+/*
+innerHTML and innerText are two commonly used properties in JavaScript for accessing and modifying the content inside an 
+HTML element, but they work differently:
+
+1. innerHTML
+Purpose: Retrieves or sets the HTML markup contained within an element.
+
+Effect: Returns the HTML, including any child elements and tags.
+
+Usage: Use innerHTML if you want to add or retrieve HTML content that includes nested tags, such as <div>, <p>, etc.
+
+  2. innerText
+Purpose: Retrieves or sets the visible text within an element, ignoring any HTML tags.
+
+Effect: Strips out HTML tags, returning only the readable text as it appears on the page.
+
+Usage: Use innerText if you only need the visible text content, with no HTML tags.
+
+  NOTE: mostly we use innerHTML
+
+ */
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+        <p id = "p1" >p tag</p>
+        <div class = "c1">div tag 2
+            <h2>hello world </h2>
+            <p> hi roshan</p>
+        </div>
+   </div>
+   <div  > div tag </div>
+   <p class = "c1" > p tag 2</p>
+
+  
+   <script>
+
+    let ref = document.getElementsByTagName("div")
+     
+    console.log(ref[0].innerHTML)
+    console.log(ref[1].innerHTML)
+    console.log(ref[2].innerHTML)
+
+
+    console.log(ref[0].innerText)
+    console.log(ref[1].innerText)
+    console.log(ref[2].innerText)
+   
+
+   </script>
+    
+</body>
+</html>
