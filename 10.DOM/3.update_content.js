@@ -2,6 +2,7 @@
 innerHTML and innerText are two commonly used properties in JavaScript for accessing and modifying the content
 inside an HTML element, but they work differently
 */
+/* WE ARE UPDATING CONTENT AND NOT ATTRIBUTE */
 !DOCTYPE html>
 <html lang="en">
 <head>
