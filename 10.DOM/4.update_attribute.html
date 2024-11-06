@@ -1,0 +1,35 @@
+/* here we are upadating attribute and its proprties and not just content */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .c1{
+            font-size: 15px;
+            border: 2px solid yellow;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <input type = "text"/>    <!-- index0 -->  <!--this notation is comment-->
+    <input type = "text"/>    <!-- index1 -->
+    <input type = "text"/>    <!-- index2 -->
+
+    <script>
+        let r = document.getElementsByTagName("input")[1]      // changing 1 index attribute properties
+        r.placeholder = "enter data"
+        r.value = "default value 101"
+        r.style.color = "red"      //EXCEPTION
+        r.style.backgroundColor = "gray"  //EXCEPTION
+        r.className = "c1"       //exception: its "className" and not just "class"
+        console.log(r.type)
+    </script>
+    
+</body>
+</html>
