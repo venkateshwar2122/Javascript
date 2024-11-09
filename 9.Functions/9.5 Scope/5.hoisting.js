@@ -24,7 +24,7 @@ Examples of Hoisting
 
 1.Example with var:
 
-console.log(a); // Outputs: undefined (hoisted declaration)
+console.log(a); // Outputs: undefined (hoisted declaration). NOTE: it should be error but it's undefined because of hoisting
 var a = 5;
 console.log(a); // Outputs: 5 (initialization)
 
