@@ -12,12 +12,23 @@ x = [4,6,8]
 /* not allowed , it will give typeerror
 
 const a = 7
-a = 356
-console.log(a)
+a = 356   // error
+console.log(a)   
 
 */
 
-/* note : reinitaiseation of const is not allowed , but it's modification is allowed */
+/*  NOTE:
+
+
+. const
+Scope: Block-scoped (like let).
+Hoisting: Variables declared with const are also hoisted but not initialized (using them before declaration throws a ReferenceError).
+Re-declaration and Update: Cannot be re-declared or updated. const is used for constants whose value won’t change.
+Mutable Objects: If the const is an object or array, its properties or items can be changed, but you cannot reassign the variable itself.
+
+*/
+
+/* note : reinitaiseation of const is not allowed , but it's modification is allowed if it's an array or object only*/
 
 /* allowed:
 
