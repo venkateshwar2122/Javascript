@@ -10,7 +10,7 @@ function fun(n){
         return 0
     }
     else{
-        return n%10 + fun(parseInt(n/10))
+        return n%10 + fun(parseInt(n/10))        // n%10 is outside fun()
     }
 }
 
