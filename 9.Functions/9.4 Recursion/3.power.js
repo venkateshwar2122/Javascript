@@ -11,7 +11,7 @@ function fun(a,b){
     }
     else{
 
-        return a*fun(a,b-1)
+        return a*fun(a,b-1)         // see "a" is outside fun() also
 
     }
 }
