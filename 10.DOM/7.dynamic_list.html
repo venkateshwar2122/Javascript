@@ -1,0 +1,62 @@
+<!--   
+
+Create an HTML program with the following requirements:
+
+Include:
+
+An input field to enter text.
+A button labeled ADD.
+An unordered list (<ul>) to display the entered items.
+Implement the following functionalities using JavaScript:
+
+When the ADD button is clicked:
+The value from the input field should be added to an array.
+The input field should be cleared after adding the value.
+Dynamically update the unordered list (<ul>) to display all the items in the array. Each item should appear as a list item (<li>).
+Ensure the list is updated using the following logic:
+
+Use a JavaScript function (disp) to iterate over the array and generate the list items using a template string (backticks `).
+Update the <ul> element's content using the innerHTML property.
+Notes:
+
+The page should dynamically reflect the changes without refreshing.
+The input value should clear after adding it to the list.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"/>
+    <button onclick="add()">ADD</button>
+    <ul>
+
+    </ul>
+    <script>
+        let ipr=document.getElementsByTagName("input")[0]
+        let ulr=document.getElementsByTagName("ul")[0]
+        let a=[]
+
+        /* whenever the page is loaded the control will stop in this line.....and whenver changes is made the control 
+        will go to next line onwards ..the above lines will not get repeated untill the whole page is reloaded */
+
+        let disp=()=>{
+            let s=''
+            for(let i=0;i<a.length;i++){
+                s=s+`<li>${a[i]}</li>`             /* template string concept..backtick symbol */
+            }
+            ulr.innerHTML=s
+        }
+        let add=()=>{
+            a.push(ipr.value)
+            ipr.value=""                
+            disp()
+        }
+    </script>
+</body>
+</html>
