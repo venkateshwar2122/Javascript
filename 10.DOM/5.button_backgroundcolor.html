@@ -1,0 +1,60 @@
+<!-- Write an HTML program that contains five buttons, each with a unique background color (red, orange, rgb(120,10,200), 
+hsl(100,70%,50%), and #23a2f1). When a button is clicked, the background color of the entire page changes to match
+the background color of the clicked button. Use JavaScript to implement the functionality.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width:100%;
+            height:100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <button   onclick="fun('red')"  style="background-color: red;"> 
+                BUTTON1
+        </button>
+
+        <button onclick="fun('orange')"  style="background-color: orange">
+                BUTTON2
+        </button>
+        
+        <button onclick="fun('rgb(120,10,200)')" style="background-color:rgb(120,10,200)" >
+            BUTTON3
+        </button>
+
+        
+        <button onclick="fun('hsl(100,70%,50%)')" style="background-color:hsl(100,70%,50%)" >
+            BUTTON4
+        </button>
+
+          
+        <button onclick="fun('#23a2f1')" style="background-color:#23a2f1" >
+            BUTTON5
+        </button>
+
+    </div>
+
+
+    <script>
+        let fun=(e)=>{
+
+        let ref = document.getElementsByClassName("con")
+        console.log(ref)
+        ref[0].style.background = e                 /* REF[0]  */
+
+        }
+        
+       
+    </script>
+
+</body>
+</html>
+
