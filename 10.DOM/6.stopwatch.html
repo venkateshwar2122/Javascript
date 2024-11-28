@@ -1,0 +1,55 @@
+<!--   
+
+Write an HTML program with the following requirements:
+
+Include an input field initialized to 0 and three buttons labeled INCREMENT, DECREMENT, and CLEAR.
+When the INCREMENT button is clicked:
+The value in the input field should increment by 1.
+Ensure the count variable is updated before setting the input field value.
+When the DECREMENT button is clicked:
+The value in the input field should decrement by 1.
+Ensure the count variable is updated before setting the input field value.
+When the CLEAR button is clicked:
+The input field should be cleared (set to an empty string).
+The count variable should reset to 0.
+Use JavaScript functions to implement this functionality and ensure the program handles the synchronization between the count variable and the input field.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="0">
+    <button onclick="fun()">INCREMENT</button>
+    <button onclick="fun2()">DECREMENT</button>
+    <button onclick="fun3()">CLEAR</button>
+
+    <script>
+        let ref = document.getElementsByTagName('input')[0];
+        let count = 0;
+
+        // Increment function
+        let fun = () => {
+            count = count + 1; // Increment count.......always write this step before the nxt step
+            ref.value = count; // Update input field
+        };
+
+        // Decrement function
+        let fun2 = () => {
+            count = count - 1; // Decrement count.....always write this step before the nxt step
+            ref.value = count; // Update input field
+        };
+
+        // Clear function
+        let fun3 = () => {
+            ref.value = ""; // Clear input field
+            count = 0; // Reset count
+        };
+    </script>
+</body>
+</html>
