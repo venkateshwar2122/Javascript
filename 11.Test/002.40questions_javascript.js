@@ -1,111 +1,98 @@
 1. What are the possible ways to create objects in JavaScript?
 
-2. What is the difference between and operators?
+2. What is JSON and its common operations?
 
-3. What are arrow functions?
+3. What is the difference between and operators?
 
-4. What is a higher order function?
+4. What are arrow functions?
 
-AHTSI
+5. What is a higher order function?
 
-5. What is a pure function?
-6
+6. What is the currying function? 7. What is a pure function?
 
-. What is the difference between let, var and const?
-7
+8. What is the difference between let, var and const?
 
-What is the Temporal Dead Zone?
+9. What is the Temporal Dead Zone?
 
-8. What is Hoisting?
+10. What is Hoisting?
 
-9. What are closures?
+11. What are closures?
 
-10. What is scope in javascript?
+12. What is scope in javascript?
 
-11. What are the differences between cookie, local storage and session storage?
+13. What is a cookie?
 
-12. What are the three states of promise?
+14. What are the differences between cookie, local storage and session storage?
 
-13. What is a callback function?
+15. What is a promise?
 
-14. What are template literals?
+16. What are the three states of promise?
 
-15. What is a strict mode in javascript?
+17. What is a callback function?
 
-16. What is null value?
+18. What are template literals?
 
-17. What are events?
+19. What is a strict mode in javascript?
 
-18. What is the use of the preventDefault method?
+20. What is undefined property?
 
-19. What is the use of the stopPropagation method?
+21. What is null value?
 
-20. What is the use of setTimeout?
+22. What are events?
 
-21. What is the use of setInterval?
+23. What is the use of the preventDefault method?
 
-22. What is the purpose of JSON.stringify?
+24. What is the use of the stopPropagation method?
 
-23. How do you redirect new page in javascript?
+25. What is the use of setTimeout?
 
-24. What are the string methods available in Regular expression?
+26. What is the use of setInterval?
 
-25. Syntax of conditional operator(ternary operator) in javascript.
+27. What is an event delegation?
 
-26. Example for rest parameter.
+28. What is the purpose of JSON.stringify?
 
-27. Combine two arrays using a spread operator.
+29. How do you redirect new page in javascript? 30. What are the string methods available in Regular expression?
 
-28. Explain Implicit Type Conversion in javascript.
+31. Syntax of conditional operator(ternary operator) in javascript.
 
-29. Is javascript a statically typed or a dynamically typed language?
+32. Example for rest parameter.
 
-30. Explain "this" keyword.
+33. Combine two arrays using a spread operator.
 
-31. What is the difference between DOM and BOM?
+34. Explain Implicit Type Conversion in javascript.
 
-32. List DOM methods to access html element references.
+35. Is javascript a statically typed or a dynamically typed language?
 
-33. Difference between for...in & for..of
+36. Explain "this" keyword.
 
-34. List a few ES6+ features.
+37. What is the difference between exec() and test() methods in javascript?
 
-35. Difference b/w object & JSON.
+38. What is the use of a constructor function in javascript?
 
-36. Difference b/w innerHTML & innerText.
+39. What is the difference between DOM and BOM?
 
-37. Difference b/w slice & splice methods.
+40. List DOM methods to access html element references.
 
-38. Differentiate b/w map() and filter() with syntax.
+41. Difference between for...in & for..of
 
-39. How do you validate email in javascript.
+42. List a few ES6+ features.
 
-40. What is the difference b/w exec() and test() methods in javascript.
+43. What is Event bubbling and Event Capturing in JavaScript?
 
+44. Differentiate map() & filter() with syntax.
 
+45. Difference b/w object & JSON.
 
+46. Provide a single line code to reverse a string in JS.
 
+47. What are anonymous functions?
 
+48. Difference b/w innerHTML & innerText.
 
+49. Difference b/w slice & splice methods.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+50. How do you validate an email in javascript?
 
 
 
