@@ -6,4 +6,4 @@ obj.name="venkatesh"
 //method 2
  obj = {...obj, marks:"99"}
 
- console.log(obj)
+ console.log(obj)         // { sid: '101', name: 'venkatesh', marks: '99' }
