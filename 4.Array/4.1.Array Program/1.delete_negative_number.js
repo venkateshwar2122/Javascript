@@ -28,3 +28,16 @@ for (let i=0 ; i<a.length;   ){   // note that i have not done i++
 }
 
 console.log(a)
+
+
+//another method using for loop
+
+let a =[-1,8,-9,-9,8,-9,6,-8]
+for(let i=0;i<a.length;i++){
+    if(a[i]<0){
+        a.splice(i,1)
+        i=i-1                /*******/
+    }
+
+}
+console.log(a)
