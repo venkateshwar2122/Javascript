@@ -27,7 +27,7 @@ console.log(a)
 
 for (let i=0 ; i<a.length-1 ; i++){  // a.length-1, i++
     
-    for(let j=i+1; j<a.length ;   ){. //a.length, not doing j++
+    for(let j=i+1; j<a.length ;   ){. //a.length, not doing j++ // note j=i+1 is there, its correct, u should always form a relation between innner loop and outer loop  variable
         
         if(a[i] == a[j]){
             a.splice(j,1)
@@ -39,6 +39,20 @@ for (let i=0 ; i<a.length-1 ; i++){  // a.length-1, i++
         
 }
 console.log(a)
-    
 
+
+//method2 ..mine method using for loop
+
+let a=[1,1,1,1,2,3,67,3,4,4,5,1,2,2,5,9]
+for(let i=0;i<a.length-1;i++){
+    for(let j=i+1;j<a.length;j++){        // note j=i+1 is there, its correct, u should always form a relation between innner loop variable(j) and outer loop  variable(i)
+        if(a[i]==a[j]){
+            a.splice(j,1)
+            j=j-1
+        }
+        
+    }
+}
+console.log(a)         //[1,2,3,67,4,5,9]
+ 
             
