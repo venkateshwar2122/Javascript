@@ -96,7 +96,7 @@ let a = [10,20,30,40,50]
 let r1 = a.reduce((acc,e,index,arr)=>{
         
         console.log(acc)
-        return acc
+        return acc           // NOTE THAT INDEX IS STARTING FROM 1 NOT 0 , THEREFORE FIRST return acc IS RETURNING TO INDEX 1 OF ARRAY AND NOT INDEX 0.
        
 })
 console.log(r1)
