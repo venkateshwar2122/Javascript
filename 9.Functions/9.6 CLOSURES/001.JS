@@ -36,6 +36,22 @@ to closure behavior.
 
 ________________________________________________
 
+EXAMPLE 2:
+
+function outer() {
+  let counter = 0;
+
+  return function inner() {
+    counter++;
+    console.log(counter);
+  };
+}
+
+const increment = outer();
+increment(); // Output: 1
+increment(); // Output: 2
+_________________________________________________________________________
+
 Key Takeaways
 ✅ A closure is created whenever a function is returned from another function.
 ✅ Closures allow functions to remember and access variables from their lexical scope.
