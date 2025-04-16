@@ -48,6 +48,8 @@ console.log("GCD is:", gcd);            // GCD is: 20
 
 /* NOTE:
 
+in below theorem a>b:
+
 gcd(a,b) = gcd(a-b,b)
          = gcd(a%b,b)            IMPORTANT
 
