@@ -53,16 +53,26 @@ gcd(a,b) = gcd(a-b,b)
 
 */
 
+
 function gcd(a,b){
-    while(b!=0){
-        r=a%b
-        a=b
-        b=r
-        
+    
+    while(a>0 && b>0){
+        if(a>b){
+            a=a%b
+        }
+        else{
+            b=b%a
+        }
+    } 
+    
+    // After the loop, either a or b will be 0, and the other will be the GCD.
+    if(a==0){
+        return b           /* return b*/
     }
-    return a
+    else{
+        return a         /* return a*/
+    }
 }
 
-console.log(gcd(120,25))          // 5
-
+console.log(gcd(20,40))             // output:20
 
