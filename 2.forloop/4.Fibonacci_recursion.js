@@ -8,6 +8,27 @@ function fibonacci(n) {
     }
 }
 
+/* RECURSION TRESS
+
+fibonacci(5)
+├── fibonacci(4)
+│   ├── fibonacci(3)
+│   │   ├── fibonacci(2)
+│   │   │   ├── fibonacci(1) → 1
+│   │   │   └── fibonacci(0) → 0
+│   │   └── fibonacci(1) → 1
+│   └── fibonacci(2)
+│       ├── fibonacci(1) → 1
+│       └── fibonacci(0) → 0
+└── fibonacci(3)
+    ├── fibonacci(2)
+    │   ├── fibonacci(1) → 1
+    │   └── fibonacci(0) → 0
+    └── fibonacci(1) → 1
+
+*/
+
+
 
 /*
 QUE. explain each iteration of recursion, how it is getting traced back upwards
