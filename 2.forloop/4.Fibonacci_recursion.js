@@ -7,6 +7,36 @@ function fibonacci(n) {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
+console.log(fibonacci(5))               // OUTPUT: 5
+
+/*
+What does fibonacci(5) = 5 actually mean?
+
+Let me explain it in the real meaning of Fibonacci numbers:
+
+📚 Fibonacci Sequence Basics:
+The Fibonacci series is:
+
+Copy
+Edit
+0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+These numbers are formed like this:
+
+fibonacci(0) = 0
+
+fibonacci(1) = 1
+
+fibonacci(2) = fibonacci(1) + fibonacci(0) = 1 + 0 = 1
+
+fibonacci(3) = 1 + 1 = 2
+
+fibonacci(4) = 2 + 1 = 3
+
+fibonacci(5) = 3 + 2 = 5
+
+fibonacci(6) = 5 + 3 = 8, and so on...
+
+*/
 
 /* RECURSION TRESS
 
