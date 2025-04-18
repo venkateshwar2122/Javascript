@@ -7,7 +7,7 @@
 
 let a = [0,0,1,2,3,4,0,0,5,6,0,7]
 
-let i =0        // pointer to track index containing element value as zero
+let i =0        // pointer to track INDEX0,INDEX1,INDEX2,AND SO ON
 
 for(let j=0; j<a.length ;j++){
     if(a[j]!=0){
@@ -16,6 +16,17 @@ for(let j=0; j<a.length ;j++){
     }
 }
 console.log(a)
+
+/* NOTE: SPLICE RETURNS ARRAY:
+
+a.splice(j, 1)[0]
+🔍 What does this do?
+a.splice(j, 1) removes 1 element from the array a at index j.
+
+splice returns an array of the removed elements (in this case, an array with just one element).
+
+[0] accesses the first element of that returned array — basically extracting the removed value.*/
+
 
 
 
