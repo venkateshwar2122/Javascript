@@ -3,4 +3,11 @@
 let s = ["html", "css", "javascript", "react", "express", "mongodb"]
 console.log(s.join("******")) // in join u have to give delimiter
 
+/* o/p:
+html******css******javascript******react******express******mongodb
+*/
+
 console.log(s.toString())  // tostring() default delimiter is comma
+/* o/p:
+html,css,javascript,react,express,mongodb
+*/
