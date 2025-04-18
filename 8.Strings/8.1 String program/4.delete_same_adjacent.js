@@ -17,7 +17,7 @@ If i were allowed to go up to s.length, then s[i + 1] would access an element be
 */
 
 let s = "acbccd"
-s=s.split('')
+s=s.split('')    // [ 'a', 'c', 'b', 'c', 'c', 'd' ]
 let i =0
 while(i<s.length-1){
     if(s[i]==s[i+1]){
