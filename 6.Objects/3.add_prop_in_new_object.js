@@ -3,7 +3,7 @@
 
 let obj = { sid:101, name:"amar", age:20, dept:"cse", marks:85}
 
-let newobj = {...obj, place:"hyd",age:25}
+let newobj = {...obj, place:"hyd",age:25}       // COPYING "obj" to "newobj"
 console.log(newobj)
 console.log(obj) //it will not modify the original object
 
