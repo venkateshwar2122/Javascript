@@ -1,5 +1,5 @@
 // to extract substring from main string
-//array.slice(startindex, endindex,-1)
+//array.slice(startindex, endindex-1)
 //array.substring(startindex, endindex-1)
 //array.substr(index, length)
 
