@@ -3,7 +3,7 @@
 
 let a = [1,-2,-3,4,5,-6,7,-8]
 
-let i = 0      // pointer to track non-negative intger
+let i = 0      // MAINTAINING POINTER AT BEGINNING INDEXES, LIKE INDEX0,INDEX1,INDEX2,INDEX3
 for(let j =0 ; j<a.length ;j++){
     if(a[j]<0){
         a.splice(i, 0 ,a.splice(j,1)[0]) // here we are shifting negative integer to right, note we are not swapping
